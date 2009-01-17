@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  urn: MyString
+  asset_type: MyString
+  asset_urn: MyString
+  credit: MyString
+  caption: MyText
+
+two:
+  urn: MyString
+  asset_type: MyString
+  asset_urn: MyString
+  credit: MyString
+  caption: MyText

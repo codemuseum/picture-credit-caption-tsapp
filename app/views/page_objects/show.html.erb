@@ -1,0 +1,20 @@
+<% stylesheets 'picture-credit-caption' %>
+<% # javascripts 'prototype', 'effects', 'dragdrop', 'assets' %>
+
+<div<%= ' class="empty-picture"' if !@page_object.picture? && @page_object.credit.blank? && @page_object.caption.blank? %>>
+  <% if @page_object.picture? -%>
+  <div class="picture">
+    <%= image_tag @page_object.picture_url %>
+  </div>
+  <% end -%>
+  <% if !@page_object.credit.blank? -%>
+  <div class="credit">
+    <%=h @page_object.credit %>
+  </div>
+  <% end -%>
+  <% if !@page_object.caption.blank? -%>
+  <div class="caption">
+    <%=h @page_object.caption %>
+  </div>
+  <% end -%>
+</div>

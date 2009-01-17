@@ -1,0 +1,19 @@
+<% stylesheets 'picture-credit-caption', 'picture-credit-caption-edit' %>
+<% javascripts 'picture-credit-caption-edit' %>
+
+<% fields_for_page_object do |f| %>  
+  <div<%= 'class="empty-picture"' if !@page_object.picture? && @page_object.credit.blank? && @page_object.caption.blank? %>>
+    <div class="picture">
+      <%= asset_preview_fields(f, [:pictures], false) %>
+    </div>
+    <div>
+      <%= asset_change_link(f, [:pictures]) %>
+    </div>
+    <div class="credit">
+      <%= f.label :credit %> <%= f.text_field :credit %>
+    </div>
+    <div class="caption">
+      <%= f.label :caption %> <%= f.text_field :caption %>
+    </div>
+  </div>
+<% end %>
