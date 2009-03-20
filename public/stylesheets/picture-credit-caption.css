@@ -1,4 +1,4 @@
 .app-picture-credit-caption .picture {text-align:center;}
 .app-picture-credit-caption .credit { font-size:40%; text-align:right; }
 .app-picture-credit-caption .caption { font-size:75%; }
-body.displaying-page.action-edit .app-picture-credit-caption .empty-picture {height:12px; border:1px dotted gray;}
+body.displaying-page.action-edit .app-picture-credit-caption .empty-picture {height:154px; border:1px dotted gray;background:transparent url(../images/empty-pcc.png) center center no-repeat;}
